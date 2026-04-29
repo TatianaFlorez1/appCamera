@@ -1,0 +1,120 @@
+//Fondo general
+ion-content {
+  --background: linear-gradient(160deg, #fff0f5 0%, #f3e5f5 100%);
+}
+
+ion-header ion-toolbar {
+  --background: #e91e8c;
+  --color: #ffffff;
+
+  ion-title {
+    font-weight: 800;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+}
+
+//Cards
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50%;
+  color: #f48fb1;
+
+  ion-icon {
+    font-size: 72px;
+    color: #f48fb1;
+    margin-bottom: 16px;
+  }
+
+  p {
+    margin: 4px 0;
+    font-size: 16px;
+
+    &:first-of-type {
+      font-size: 20px;
+      font-weight: 800;
+      color: #e91e8c;
+    }
+  }
+}
+
+
+ion-card {
+  border-radius: 24px;
+  margin: 12px 14px;
+  box-shadow: 0 6px 20px rgba(233, 30, 140, 0.15);
+  overflow: hidden;
+  border: none;
+
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  ion-card-header {
+    padding-bottom: 0;
+
+    ion-card-subtitle {
+      font-size: 12px;
+      font-weight: 600;
+      color: #ce93d8;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+  }
+
+  ion-card-content {
+    font-size: 15px;
+    font-weight: 500;
+    color: #5d4037;
+    padding-top: 6px;
+    padding-bottom: 4px;
+  }
+
+  ion-item {
+    --background: transparent;
+    --border-color: transparent;
+    --padding-start: 8px;
+    --inner-padding-end: 8px;
+    padding-bottom: 6px;
+
+    ion-button {
+      --color: #e91e8c;
+
+      ion-icon {
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+ion-card:nth-child(5n+1) { --background: #fff0f5; }
+ion-card:nth-child(5n+2) { --background: #f3e5f5; }
+ion-card:nth-child(5n+3) { --background: #e8f5e9; }
+ion-card:nth-child(5n+4) { --background: #e3f2fd; }
+ion-card:nth-child(5n+5) { --background: #fff8e1; }
+
+//Botón agregar
+ion-fab-button {
+  --background: #e91e8c;
+  --background-activated: #c2185b;
+  --box-shadow: 0 4px 18px rgba(233, 30, 140, 0.5);
+  width: 64px !important;
+  height: 64px !important;
+
+  ion-icon {
+    font-size: 32px !important;
+  }
+}
+
+ion-fab {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%); 
+}
